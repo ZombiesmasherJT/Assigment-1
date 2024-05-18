@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Victoria and Albert Museum</title>
+</head>
+<body>
+    <header>
+        <h1>Victoria and Albert Museum API</h1>
+        <form id="search-form">
+            <label for="search-input">Search the collection:</label>
+            <input type="text" id="search-input" placeholder="Enter search term">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main id="results-container">
+        <template id="result-template">
+            <div class="result-item">
+                <h2 class="result-title"></h2>
+                <img class="result-image" src="" alt="">
+                <p class="result-description"></p>
+                <p class="result-date"></p>
+                <p class="result-place"></p>
+            </div>
+        </template>
+    </main>
+    <div id="loading" style="display: none;"><img src="loading.gif" alt="Loading"></div>
+    <script src="script.js"></script>
+</body>
+</html>
